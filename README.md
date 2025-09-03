@@ -9,4 +9,14 @@ Commands:
 - \list shows the current tasks (both to do and done)
 - \delete <number> deletes the tasks from the list.
 
-  
+# Notes
+
+If you want to fork this repo and make changes, I suggest to launch this line after cloning:
+
+'''
+git rm --cached tasks.json
+'''
+
+In this way you will have a tasks.json file correctly initialized but remote repository won't see the changes in all the tasks.
+
+
