@@ -6,7 +6,11 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes      
 
 # get this from BotFather on Telegram
-TELEGRAM_TOKEN = "7508492127:AAGuka9ukhZ4UPwFjphGJZ2EeNiz_JQao4U"   
+from dotenv import load_dotenv
+import os
+load_dotenv()
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+
 TASKS_FILE = "tasks.json"
 
 # Logging configuration
